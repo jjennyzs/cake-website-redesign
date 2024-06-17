@@ -14,46 +14,51 @@
 <body>
     <nav class="relative">
         <div class="justify-between z-20 shadow-sm p-4">
-            <img class='logo' src="./public/icon/logo.svg" alt="">
-            <ul class="hidden sm-g-4">
-                <li>Home</li>
-                <li id="menu-button">Menu</li>
-                <li>Contact</li>
+            <img src="./public/icon/hamb.svg" alt="" id="hamburger" class="sm-hide cursor-pointer">
+            <a href="./index.html">
+                <img class='logo cursor-pointer' src="./public/icon/logo.svg" alt="">
+            </a>
+            <ul class="hidden sm-g-4 list-none ml-auto mr-8">
+                <li class="underline cursor-pointer"><a href="./index.html"><b>Home</b></a></li>
+                <li class="underline cursor-pointer" id="menu-button">Menu</li>
+                <li class="underline cursor-pointer">Contact</li>
             </ul>
-            <img src="./public/icon/hamb.svg" alt="" id="hamburger" class="sm-hide">
+            <div class="rounded-lg border-neutral-300 p-4 cursor-pointer">
+                <img src="./public/icon/cart.svg" alt="cart">
+            </div>
         </div>
-        <div id="menu-desktop" class="absolute bg-neutral-50 rounded-b w-screen justify-between hidden">
+        <div id="menu-desktop" class="absolute bg-neutral-50 rounded-b w-screen justify-around hidden py-8 md-w-max-4-5">
             <div class="grid-cols-2">
-                <div>
-                    <img src="public/icon/valentines.svg" alt="">
-                    <p>Valentine's</p>
+                <div class="flex-col">
+                    <img src="public/icon/valentines.svg" alt="" class="mega-icons">
+                    <p class="text-lg">Valentine's</p>
                 </div>
-                <div>
-                    <img src="public/icon/party-box.svg" alt="">
-                    <p>Party Box</p>
+                <div class="flex-col">
+                    <img src="public/icon/party-box.svg" alt="" class="mega-icons">
+                    <p class="text-lg">Party Box</p>
                 </div>
-                <div>
-                    <img src="public/icon/pizza-cake.svg" alt="">
-                    <p>Pizza Cake</p>
+                <div class="flex-col">
+                    <img src="public/icon/pizza-cake.svg" alt="" class="mega-icons">
+                    <p class="text-lg">Pizza Cake</p>
                 </div>
-                <div>
-                    <img src="public/icon/cupcake.svg" alt="">
-                    <p>Cupcakes</p>
+                <div class="flex-col">
+                    <img src="public/icon/cupcake.svg" alt="" class="mega-icons">
+                    <p class="text-lg">Cupcakes</p>
                 </div>
             </div>
-            <div>
-                <img src="public/icon/cake.svg" alt="">
-                <p>Cake</p>
-                <ul>
+            <div class="flex-col">
+                <img src="public/icon/cake.svg" alt="" class="mega-icons">
+                <p class="text-lg text-center">Cake</p>
+                <ul class="list-none p-0 text-neutral-600">
                     <li>Customize</li>
                     <li>Shaker Topper</li>
                 </ul>
             </div>
-            <div>
-                <img src="public/icon/cookies.svg" alt="">
-                <p>Sweet Treats</p>
-                <ul>
-                    <li>Cakepops</li>
+            <div class="flex-col">
+                <img src="public/icon/cookies.svg" alt="" class="mega-icons">
+                <p class="text-lg text-center">Sweet Treats</p>
+                <ul class="list-none p-0 text-neutral-600">
+                    <li class="">Cakepops</li>
                     <li>Cookies</li>
                     <li>Macarons</li>
                     <li>Pretzels</li>
@@ -62,13 +67,13 @@
             </div>
         </div>
         <div id="menu-mobile" class="sm-hide mega-mobile absolute sm-hide bg-neutral-50 rounded-b w-screen">
-            <ul class="list-none">
-                <li>Home</li>
-                <details>
-                    <summary>Menu</summary>
+            <ul class="list-none flex-col-4">
+                <li class="underline cursor-pointer"><a href="./index.html"><b>Home</b></a></li>
+                <details class="cursor-pointer">
+                    <summary class="underline">Menu</summary>
                     <div class="mt-2 g-2">
                         <img class="w-8" src="./public/icon/valentines.svg" alt="">
-                        <li>Valentine's</li>
+                        <li class="">Valentine's</li>
                     </div>
                     <div class="mt-2 g-2">
                         <img class="w-8" src="./public/icon/party-box.svg" alt="">
@@ -106,14 +111,21 @@
                         </details>
                     </div>
                 </details>
-                <li>Contact</li>
+                <li class="underline cursor-pointer">Contact</li>
             </ul>
 
         </div>
     </nav>
     <main style="background-image: url(./public/image/hero.png);" class="h-screen bg-no-repeat">
     </main>
-    <section></section>
+    <section>
+        <h2>Welcome to The Cake Shop</h2>
+        <p>Located in San Mateo, California, The Cake Shop crafts all of our baked treats from scratch with fresh
+            natural ingredients.
+            For the most discerning sweet tooth, we offer Custom Cakes, Celebration Cakes, Cupcakes, Cake Pops, French
+            Macarons, Decorated Cookies, Chocolate Dipped Pretzels and Decorated Rice Krispies Treats!
+        </p>
+    </section>
     <footer></footer>
 
     <script src="script.js"></script>

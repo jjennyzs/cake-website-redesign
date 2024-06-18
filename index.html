@@ -27,12 +27,15 @@
                 <img src="./public/icon/cart.svg" alt="cart">
             </div>
         </div>
-        <div id="menu-desktop" class="absolute bg-neutral-50 rounded-b w-screen justify-around hidden py-8 md-w-max-4-5">
+        <div id="menu-desktop"
+            class="absolute bg-neutral-50 rounded-b w-screen justify-around hidden py-8 md-w-max-3-5">
             <div class="grid-cols-2">
-                <div class="flex-col">
-                    <img src="public/icon/valentines.svg" alt="" class="mega-icons">
-                    <p class="text-lg">Valentine's</p>
-                </div>
+                <a href="./valentines.html">
+                    <div class="flex-col">
+                        <img src="public/icon/valentines.svg" alt="" class="mega-icons">
+                        <p class="text-lg">Valentine's</p>
+                    </div>
+                </a>
                 <div class="flex-col">
                     <img src="public/icon/party-box.svg" alt="" class="mega-icons">
                     <p class="text-lg">Party Box</p>
@@ -66,15 +69,17 @@
                 </ul>
             </div>
         </div>
-        <div id="menu-mobile" class="sm-hide mega-mobile absolute sm-hide bg-neutral-50 rounded-b w-screen">
+        <div id="menu-mobile" class="mega-mobile absolute sm-hide bg-neutral-50 rounded-b w-screen hidden">
             <ul class="list-none flex-col-4">
                 <li class="underline cursor-pointer"><a href="./index.html"><b>Home</b></a></li>
                 <details class="cursor-pointer">
                     <summary class="underline">Menu</summary>
-                    <div class="mt-2 g-2">
-                        <img class="w-8" src="./public/icon/valentines.svg" alt="">
-                        <li class="">Valentine's</li>
-                    </div>
+                    <a href="./valentines.html">
+                        <div class="mt-2 g-2">
+                            <img class="w-8" src="./public/icon/valentines.svg" alt="">
+                            <li class="">Valentine's</li>
+                        </div>
+                    </a>
                     <div class="mt-2 g-2">
                         <img class="w-8" src="./public/icon/party-box.svg" alt="">
                         <li>Party Box</li>
@@ -118,14 +123,41 @@
     </nav>
     <main style="background-image: url(./public/image/hero.png);" class="h-screen bg-no-repeat">
     </main>
-    <section>
-        <h2>Welcome to The Cake Shop</h2>
-        <p>Located in San Mateo, California, The Cake Shop crafts all of our baked treats from scratch with fresh
-            natural ingredients.
-            For the most discerning sweet tooth, we offer Custom Cakes, Celebration Cakes, Cupcakes, Cake Pops, French
-            Macarons, Decorated Cookies, Chocolate Dipped Pretzels and Decorated Rice Krispies Treats!
-        </p>
+    <section class="mt-12 w-screen item-center-col">
+        <div class="w-max-4-5 md-w-max-3-5">
+            <h1 class="text-center">Welcome to The Cake Shop</h1>
+            <p>&emsp;The Cake Shop crafts all of our baked treats from scratch with fresh
+                natural ingredients.
+                For the most discerning sweet tooth, we offer Custom Cakes, Celebration Cakes, Cupcakes, Cake Pops,
+                French
+                Macarons, Decorated Cookies, Chocolate Dipped Pretzels and Decorated Rice Krispies Treats!
+            </p>
+
+            <h1 class="text-center">About Us</h1>
+            <p> &emsp;The Cake Shop is a sweet local family owned bakery located in <b>San Mateo, California</b>. We
+                pride
+                ourselves with delivering the sweetest treats and cakes to you!
+
+                All of our cakes and treats are made fresh from scratch with every order. Nothing is ever frozen and we
+                use
+                all natural ingredients. Great care is taken with each and every order, and decorated to impress.
+            </p>
+            <p>&emsp;We strive to set new trends and are constantly inspired by our customer's creativity! Combining our
+                good
+                ol'
+                fashioned scratch baking with fresh ideas push us into creative unchartered cake decorating territory.
+            </p>
+            <div
+                style="display: flex; padding: 1em; border-left: 6px solid #ec8ffa; background-color: rgb(247, 247, 247); border-radius: 10px;">
+                <p class="">
+                    🍰 We promise to leave you satisfied and full of happiness with every bite!
+                </p>
+            </div>
+            <!-- <img class="shop"
+                src="https://images.squarespace-cdn.com/content/v1/557b2d32e4b0f58bf76a08cb/1473051166808-RK5LY3NL5LJWK8ZQCER3/image-asset.png?format=1500w"
+                alt="" srcset=""> -->
     </section>
+    </div>
     <footer></footer>
 
     <script src="script.js"></script>

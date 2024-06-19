@@ -8,9 +8,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-image: url('https://images.pexels.com/photos/1463389/pexels-photo-1463389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-repeat: no-repeat; */
     font-family: "Quicksand", sans-serif;
 }
 
@@ -154,6 +151,59 @@ header {
 .order-form input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+#cakes {
+    flex: 2;
+}
+
+#cart {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item button {
+    margin-left: 10px;
+}
+
+/* button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #367588;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+} */
+
+.cake-image-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 3em;
+}
+
+.cake-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Code by Samrat ends here */
 
 #back,
 #next {
@@ -506,6 +556,18 @@ img.yelp {
 .lift-up>*:hover {
     transform: translateY(-2px);
 }
+
+#remove {
+    background-color: #fff;
+    padding: .5em 1em .5em 1em;
+}
+
+.items-start {
+    display: flex;
+    align-items: start;
+}
+
+
 
 @media (min-width:640px) {
     .sm-hide {

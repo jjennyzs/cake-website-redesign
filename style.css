@@ -1,5 +1,6 @@
 :root {
     --prim-color: #EC8FFA;
+    --sec-color: #f29bff;
 }
 
 body {
@@ -18,12 +19,29 @@ button {
     font-family: 'Quicksand', sans-serif;
 }
 
+#back,
+#next {
+    font-weight: 100;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.h-80 {
+    height: 30em;
+}
+
 .font-light {
     font-weight: 400;
 }
 
 .bg-pink-prim {
     background-color: var(--prim-color);
+}
+
+.bg-pink-sec {
+    background-color: var(--sec-color);
 }
 
 .bg-neutral-200 {
@@ -36,7 +54,7 @@ button {
 }
 
 .hover-bg-light-pink:hover {
-    background-color: #f29bff;
+    background-color: var(--sec-color);
 
 }
 
@@ -315,6 +333,25 @@ img.shop {
     gap: .5em;
 }
 
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-center-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mt-8 {
+    margin-top: 2em;
+}
+
+.all-mt-2>* {
+    margin-top: 1em;
+}
+
 @media (min-width:640px) {
     .sm-hide {
         display: none;
@@ -343,14 +380,6 @@ img.shop {
         display: flex;
         align-items: start;
     }
-}
-
-.mt-8 {
-    margin-top: 2em;
-}
-
-.all-mt-2>* {
-    margin-top: 1em;
 }
 
 @media (min-width:760px) {

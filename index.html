@@ -21,7 +21,7 @@
             <ul class="hidden sm-g-4 list-none ml-auto mr-8">
                 <li class="underline cursor-pointer"><a href="./index.html"><b>Home</b></a></li>
                 <li class="underline cursor-pointer" id="menu-button">Menu</li>
-                <li class="underline cursor-pointer">Contact</li>
+                <li class="underline cursor-pointer"><a href="./contact.html">Contact</a></li>
             </ul>
             <div class="rounded-lg border-neutral-300 p-4 cursor-pointer">
                 <img src="./public/icon/cart.svg" alt="cart">
@@ -40,10 +40,12 @@
                     <img src="public/icon/party-box.svg" alt="" class="mega-icons">
                     <p class="text-lg">Party Box</p>
                 </div>
-                <div class="flex-col">
-                    <img src="public/icon/pizza-cake.svg" alt="" class="mega-icons">
-                    <p class="text-lg">Pizza Cake</p>
-                </div>
+                <a href="/pizza-cake.html">
+                    <div class="flex-col">
+                        <img src="public/icon/pizza-cake.svg" alt="" class="mega-icons">
+                        <p class="text-lg">Pizza Cake</p>
+                    </div>
+                </a>
                 <div class="flex-col">
                     <img src="public/icon/cupcake.svg" alt="" class="mega-icons">
                     <p class="text-lg">Cupcakes</p>
@@ -84,10 +86,12 @@
                         <img class="w-8" src="./public/icon/party-box.svg" alt="">
                         <li>Party Box</li>
                     </div>
-                    <div class="mt-2 g-2">
-                        <img class="w-8" src="./public/icon/pizza-cake.svg" alt="">
-                        <li>Pizza Cakes</li>
-                    </div>
+                    <a href="./pizza-cake.html">
+                        <div class="mt-2 g-2">
+                            <img class="w-8" src="./public/icon/pizza-cake.svg" alt="">
+                            <li>Pizza Cakes</li>
+                        </div>
+                    </a>
                     <div class="mt-2 g-2">
                         <img class="w-8" src="public/icon/cake.svg" alt="">
                         <details>
@@ -116,7 +120,7 @@
                         </details>
                     </div>
                 </details>
-                <li class="underline cursor-pointer">Contact</li>
+                <li class="underline cursor-pointer"><a href="./contact.html">Contact</a></li>
             </ul>
 
         </div>
@@ -132,7 +136,21 @@
                 French
                 Macarons, Decorated Cookies, Chocolate Dipped Pretzels and Decorated Rice Krispies Treats!
             </p>
-
+            <div id="carousel" class="bg-neutral-50 h-80 justify-center-col rounded-lg">
+                <div class="flex item-center justify-center g-2">
+                    <button class="h-4 px-8 rounded-lg" id="back">
+                        <h2 class="m-0">
+                            <</h2>
+                    </button>
+                    <div id="">
+                        <img class="rounded-lg" id="display" src="./public/image/slides/0.jpg" alt="" style="width: 20rem;">
+                    </div>
+                    <button class="h-4 px-8 rounded-lg" id="next">
+                        <h2 class="m-0">></h2>
+                    </button>
+                </div>
+                <div id="queues"></div>
+            </div>
             <h1 class="text-center">About Us</h1>
             <p> &emsp;The Cake Shop is a sweet local family owned bakery located in <b>San Mateo, California</b>. We
                 pride
@@ -158,7 +176,19 @@
                 alt="" srcset=""> -->
     </section>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="w-screen">
+            <div class="bg-pink-sec justify-center g-2">
+                <a href=""><img src="./public/icon/fb.svg" alt=""></a>
+                <a href=""><img src="./public/icon/mail.svg" alt=""></a>
+                <a href=""><img src="./public/icon/flower.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="bg-pink-prim">
+            <p>THE CAKE SHOP, 25 W 25TH AVE STE 6, SAN MATEO CA(650) 393-4250THECAKE.SHOP@YAHOO.COM</p>
+            <p>Copyright | 2016 | The Cake Shop | Web Design by Michele's Creative Studio</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 

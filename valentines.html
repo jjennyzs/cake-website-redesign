@@ -18,7 +18,7 @@
             <ul class="hidden sm-g-4 list-none ml-auto mr-8">
                 <li class="underline cursor-pointer"><a href="./index.html">Home</a></li>
                 <li class="underline cursor-pointer" id="menu-button"><b>Menu</b></li>
-                <li class="underline cursor-pointer">Contact</li>
+                <li class="underline cursor-pointer"><a href="./contact.html">Contact</a></li>
             </ul>
             <div class="rounded-lg border-neutral-300 p-4 cursor-pointer">
                 <img src="./public/icon/cart.svg" alt="cart">
@@ -30,17 +30,19 @@
                 <a href="./valentines.html">
                     <div class="flex-col">
                         <img src="public/icon/valentines.svg" alt="" class="mega-icons">
-                        <p class="text-lg">Valentine's</p>
+                        <p class="text-lg"><b>Valentine's</b></p>
                     </div>
                 </a>
                 <div class="flex-col">
                     <img src="public/icon/party-box.svg" alt="" class="mega-icons">
                     <p class="text-lg">Party Box</p>
                 </div>
-                <div class="flex-col">
-                    <img src="public/icon/pizza-cake.svg" alt="" class="mega-icons">
-                    <p class="text-lg">Pizza Cake</p>
-                </div>
+                <a href="./pizza-cake.html">
+                    <div class="flex-col">
+                        <img src="public/icon/pizza-cake.svg" alt="" class="mega-icons">
+                        <p class="text-lg">Pizza Cake</p>
+                    </div>
+                </a>
                 <div class="flex-col">
                     <img src="public/icon/cupcake.svg" alt="" class="mega-icons">
                     <p class="text-lg">Cupcakes</p>
@@ -81,10 +83,12 @@
                         <img class="w-8" src="./public/icon/party-box.svg" alt="">
                         <li>Party Box</li>
                     </div>
-                    <div class="mt-2 g-2">
-                        <img class="w-8" src="./public/icon/pizza-cake.svg" alt="">
-                        <li>Pizza Cakes</li>
-                    </div>
+                    <a href="./pizza-cake.html">
+                        <div class="mt-2 g-2">
+                            <img class="w-8" src="./public/icon/pizza-cake.svg" alt="">
+                            <li>Pizza Cakes</li>
+                        </div>
+                    </a>
                     <div class="mt-2 g-2">
                         <img class="w-8" src="public/icon/cake.svg" alt="">
                         <details>
@@ -113,7 +117,7 @@
                         </details>
                     </div>
                 </details>
-                <li class="underline cursor-pointer">Contact</li>
+                <li class="underline cursor-pointer"><a href="./contact.html">Contact</a></li>
             </ul>
 
         </div>
@@ -150,7 +154,7 @@
                 </div>
                 <div class="g-2 item-center flex-1">
                     <h1 class="text-center">$34.95</h1>
-                    <button class="h-4 px-8 rounded-lg bg-pink-prim shadow-prim hover-bg-light-pink">
+                    <button id="add-to-cart" class="h-4 px-8 rounded-lg bg-pink-prim shadow-prim hover-bg-light-pink">
                         <h1 style="margin: 0; color: white;">Add to cart</h1>
                     </button>
                 </div>

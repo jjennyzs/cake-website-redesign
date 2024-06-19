@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Cake Shop</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav class="relative">
+        <div class="justify-between z-20 shadow-sm p-4">
+            <img src="./public/icon/hamb.svg" alt="" id="hamburger" class="sm-hide cursor-pointer">
+            <a href="./index.html">
+                <img class='logo cursor-pointer' src="./public/icon/logo.svg" alt="">
+            </a>
+            <ul class="hidden sm-g-4 list-none ml-auto mr-8">
+                <li class="underline cursor-pointer"><a href="./index.html">Home</a></li>
+                <li class="underline cursor-pointer" id="menu-button">Menu</li>
+                <li class="underline cursor-pointer"><a href="./contact.html"><b>Contact</b></a></li>
+            </ul>
+            <div class="rounded-lg border-neutral-300 p-4 cursor-pointer">
+                <img src="./public/icon/cart.svg" alt="cart">
+            </div>
+        </div>
+        <div id="menu-desktop"
+            class="absolute bg-neutral-50 rounded-b w-screen justify-around hidden py-8 md-w-max-3-5">
+            <div class="grid-cols-2">
+                <a href="./valentines.html">
+                    <div class="flex-col">
+                        <img src="public/icon/valentines.svg" alt="" class="mega-icons">
+                        <p class="text-lg">Valentine's</p>
+                    </div>
+                </a>
+                <div class="flex-col">
+                    <img src="public/icon/party-box.svg" alt="" class="mega-icons">
+                    <p class="text-lg">Party Box</p>
+                </div>
+                <a href="/pizza-cake.html">
+                    <div class="flex-col">
+                        <img src="public/icon/pizza-cake.svg" alt="" class="mega-icons">
+                        <p class="text-lg">Pizza Cake</p>
+                    </div>
+                </a>
+                <div class="flex-col">
+                    <img src="public/icon/cupcake.svg" alt="" class="mega-icons">
+                    <p class="text-lg">Cupcakes</p>
+                </div>
+            </div>
+            <div class="flex-col">
+                <img src="public/icon/cake.svg" alt="" class="mega-icons">
+                <p class="text-lg text-center">Cake</p>
+                <ul class="list-none p-0 text-neutral-600">
+                    <li>Customize</li>
+                    <li>Shaker Topper</li>
+                </ul>
+            </div>
+            <div class="flex-col">
+                <img src="public/icon/cookies.svg" alt="" class="mega-icons">
+                <p class="text-lg text-center">Sweet Treats</p>
+                <ul class="list-none p-0 text-neutral-600">
+                    <li class="">Cakepops</li>
+                    <li>Cookies</li>
+                    <li>Macarons</li>
+                    <li>Pretzels</li>
+                    <li>Rice Krispies</li>
+                </ul>
+            </div>
+        </div>
+        <div id="menu-mobile" class="mega-mobile absolute sm-hide bg-neutral-50 rounded-b w-screen hidden">
+            <ul class="list-none flex-col-4">
+                <li class="underline cursor-pointer"><a href="./index.html">Home</a></li>
+                <details class="cursor-pointer">
+                    <summary class="underline">Menu</summary>
+                    <a href="./valentines.html">
+                        <div class="mt-2 g-2">
+                            <img class="w-8" src="./public/icon/valentines.svg" alt="">
+                            <li class="">Valentine's</li>
+                        </div>
+                    </a>
+                    <div class="mt-2 g-2">
+                        <img class="w-8" src="./public/icon/party-box.svg" alt="">
+                        <li>Party Box</li>
+                    </div>
+                    <a href="./pizza-cake.html">
+                        <div class="mt-2 g-2">
+                            <img class="w-8" src="./public/icon/pizza-cake.svg" alt="">
+                            <li>Pizza Cakes</li>
+                        </div>
+                    </a>
+                    <div class="mt-2 g-2">
+                        <img class="w-8" src="public/icon/cake.svg" alt="">
+                        <details>
+                            <summary>Cakes</summary>
+                            <ul>
+                                <li>Customize</li>
+                                <li>Shaker Topper</li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="mt-2 g-2">
+                        <img class="w-8" src="public/icon/cupcake.svg" alt="">
+                        <li>Cupcakes</li>
+                    </div>
+                    <div class="mt-2 g-2">
+                        <img class="w-8" src="public/icon/cookies.svg" alt="">
+                        <details>
+                            <summary>Sweet Treats</summary>
+                            <ul>
+                                <li>Cakepops</li>
+                                <li>Cookies</li>
+                                <li>Macarons</li>
+                                <li>Pretzels</li>
+                                <li>Rice Krispies</li>
+                            </ul>
+                        </details>
+                    </div>
+                </details>
+                <li class="underline cursor-pointer"><a href="./contact.html"><b>Contact</b></a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container mt-12">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <section class="contact-info">
+            <h2>Business Information</h2>
+            <p><strong>Business Name:</strong> The Cake Shop</p>
+            <p><strong>Address:</strong> 25 West 25th Ave Suite 6, San Mateo, CA 94403</p>
+            <p><strong>Phone:</strong> (650) 393 4250</p>
+            <p><strong>Email:</strong> <a href="mailto:thecake.shop@yahoo.com">thecake.shop@yahoo.com</a></p>
+            <p><strong>Business Hours:</strong><br>
+                Monday 1pm-7pm<br>
+                Tuesday - Friday 10am-7pm<br>
+                Saturday 10am-1pm<br>
+                Sunday 8am-10am (open for pick ups only)
+            </p>
+        </section>
+
+        <!-- Google Maps Embed -->
+        <section class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.342707988085!2d-122.31292838467742!3d37.55950053728663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba7dc6f5db29%3A0x4fbdd79ff990fd84!2s25%20W%2025th%20Ave%20Suite%206%2C%20San%20Mateo%2C%20CA%2094403%2C%20USA!5e0!3m2!1sen!2s!4v1623846651675!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="order-form">
+            <h2>Custom Cake Order Form</h2>
+            <form action="submit_order.php" method="post">
+                <label for="customer_name">Your Name:</label>
+                <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+                <label for="subject_name">Subject Name (on the cake):</label>
+                <input type="text" id="subject_name" name="subject_name" required><br><br>
+
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="event">Event:</label>
+                <input type="text" id="event" name="event" required><br><br>
+
+                <label for="event_date">Date of Event:</label>
+                <input type="date" id="event_date" name="event_date" required><br><br>
+
+                <label for="servings">Number of Servings:</label>
+                <input type="number" id="servings" name="servings" required><br><br>
+
+                <label for="icing_preference">Cake Icing Preference:</label>
+                <select id="icing_preference" name="icing_preference" required>
+                    <option value="fondant">Fondant</option>
+                    <option value="buttercream">Buttercream</option>
+                </select><br><br>
+
+                <label for="cake_message">Message on Cake:</label>
+                <textarea id="cake_message" name="cake_message" rows="4"></textarea><br><br>
+
+                <label for="cake_flavor">Cake Flavor:</label>
+                <select id="cake_flavor" name="cake_flavor" required>
+                    <option value="french_vanilla">French Vanilla</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="funfetti">Funfetti</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="red_velvet">Red Velvet</option>
+                    <option value="marble">Marble</option>
+                    <option value="neapolitan">Neapolitan</option>
+                    <option value="carrot">Carrot</option>
+                </select><br><br>
+
+                <label for="cake_filling">Cake Filling:</label>
+                <select id="cake_filling" name="cake_filling" required>
+                    <option value="vanilla_bean">Vanilla Bean</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="cookies_cream">Cookies and Cream</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="raspberry">Raspberry</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="cream_cheese">Cream Cheese</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit Order">
+            </form>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
